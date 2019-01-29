@@ -79,7 +79,7 @@ header{background: #171717;padding:1.5em 0;color: #fff;width: 100%;float: left; 
 .button{border:0.125rem #63E6C2 solid;background: #63E6C2;color: #000;text-transform: uppercase;font-weight: 700;font-size:1rem;padding: 1.125rem;border-radius:0.25rem;line-height: 1.25rem;-webkit-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;box-sizing: border-box;}
 .button:hover{background: #12202D;color: #fff;}
 .button-secondary{background: #12202D;color: #fff;border:0.125rem #12202D solid;}
-.button-secondary:hover{background: #63E6C2;color: #000;}
+.button-secondary:hover{background: none;color: #12202D;}
 .icon.light{opacity: 0.3;}
 
 /*----card css----*/
