@@ -681,6 +681,12 @@
             $(".navwrap, .menuToggleMobile").toggleClass('nav-open');
             $("body").toggleClass('nav-expand');
         });
+        $(document).on('click', '.pagination a', function(event) {
+        	if (!$(this).hasClass("previous") && !$(this).hasClass("next")) {
+        		$(".pagination a").removeClass('active');
+        		$(this).addClass('active');
+        	}
+        });
     </script>
 </body>
 </html>
