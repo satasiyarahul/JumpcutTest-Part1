@@ -84,7 +84,7 @@ header{background: #171717;padding:1.5em 0;color: #fff;width: 100%;float: left; 
 
 /*----card css----*/
 .grid-4{width: 25%;float: left;padding-left: 0.5rem;padding-right: 0.5rem;}
-.card {background: #fff;border-radius:0.32rem;box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 3px 0 rgba(0,0,0,.12);width: 100%;padding: 1.125rem;float: left;text-align: center;margin-bottom: 1rem;border: 0.125rem #fff solid;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+.card {background: #fff;border-radius:0.32rem;    box-shadow: 1px 1px 10px rgba(0,0,0,0.05);width: 100%;padding: 1.125rem;float: left;text-align: center;margin-bottom: 1rem;border: 0.125rem #fff solid;-webkit-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
 .card:hover{border-color:#78E4B9;}
 .card .profile{width: 4.4rem;height: 4.4rem;border-radius:100%;position: relative;display: inline-block;font-weight: bold;}
 .card .profile.blue{background: #3F4EFD;}
@@ -117,11 +117,13 @@ header{background: #171717;padding:1.5em 0;color: #fff;width: 100%;float: left; 
 .location span:last-child{padding-right: 0;}
 .location span img{height:0.7rem;opacity: 0.5;margin-right: 0.3rem;}
 
+/*pagination*/
+
 .pagination{margin-bottom: 4.8rem;margin-top: 1rem;}
 .pagination a{width: 1.8rem;height: 1.8rem;line-height: 2rem;display: inline-block;border-radius:0.2rem;text-align: center;color: #82878A;margin:0.2rem;}
 .pagination a.active{background: #08d6b2;color: #fff;}
-.pagination a.previous:after,.pagination a.next:after{content:"";display: inline-block;border-top: 0.125rem solid #82878a;border-left: 0.125rem solid #82878a;height: 0.56rem;width: 0.56rem;-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);margin-right: 0.28rem;border-radius: 0.1777rem;}
-.pagination a.next:after{-webkit-transform: rotate(135deg);-ms-transform: rotate(135deg);-o-transform: rotate(135deg);transform: rotate(135deg);margin-left: -0.28rem;}
+.pagination a.previous:after,.pagination a.next:after{content:"";display: inline-block;border-top: 0.125rem solid #82878a;border-left: 0.125rem solid #82878a;height: 0.56rem;width: 0.56rem;-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);margin-right: 0.28rem;border-radius: 0.1777rem;margin-right: -0.3rem;}
+.pagination a.next:after{-webkit-transform: rotate(135deg);-ms-transform: rotate(135deg);-o-transform: rotate(135deg);transform: rotate(135deg);margin-left: -0.3rem;margin-right: 0;}
 .resultcount{margin-bottom: 1.6rem;font-size: 1.2em;}
 footer{background: #161616;padding: 1.25rem;color:rgba(255,255,255,0.5);font-size:0.8rem;}
 .footerlink a{display: inline-block;border-right: 1px rgba(255,255,255,0.5) solid;padding:0 0.6rem;}
@@ -152,7 +154,7 @@ footer{background: #161616;padding: 1.25rem;color:rgba(255,255,255,0.5);font-siz
 	.menuToggleMobile span{width:1.8rem;height: 0.25rem;background: #fff;display: inline-block;float: left;border-radius: 0.25rem;-webkit-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
 	.menuToggleMobile span.second{margin: 0.33rem 0;}
 	.navwrap {float: left;display: block;position: fixed;width:18.75rem;max-width: 25rem;min-width: 17rem;height: calc(100% - 4.36rem);background: #171717;z-index: 999;left: 0;top: 4.36rem;overflow: hidden;width: 0;-webkit-transform: skew(10deg);-ms-transform: skew(10deg);-o-transform: skew(10deg);transform: skew(10deg);-webkit-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;opacity:0;left: -25rem;}
-	.navwrap.nav-open{display: block;-webkit-transform: skew(0deg);-ms-transform: skew(0deg);-o-transform: skew(0deg);transform: skew(0deg);width: 70%;opacity: 1;left: 0;}
+	.navwrap.nav-open{display: block;-webkit-transform: skew(0deg);-ms-transform: skew(0deg);-o-transform: skew(0deg);transform: skew(0deg);width: 70%;opacity: 1;left: 0;overflow: auto;}
 	.nav-open .first{width: 1.4rem;}
 	.nav-open .first{width: 1rem;}
 	.nav-open .third{width: 1.6rem;}
